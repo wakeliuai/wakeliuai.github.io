@@ -4,7 +4,9 @@
     --accent-color: #8c8c8c;
     --link-color: #a0a0a0;
     --link-hover-color: #ffffff;
+    --highlight: #4a4d52;
     --serif: 'Times New Roman', serif;
+    --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -19,11 +21,11 @@ body {
     align-items: center;
 }
 
-nav { margin-bottom: 80px; border-bottom: 1px solid #222; padding-bottom: 20px; }
+nav { margin-bottom: 60px; border-bottom: 1px solid #222; padding-bottom: 20px; width: 100%; max-width: 800px; text-align: center; }
 nav a { 
     color: var(--accent-color); 
     text-decoration: none; 
-    margin: 0 20px; 
+    margin: 0 15px; 
     font-size: 0.9em;
     text-transform: uppercase; 
     letter-spacing: 0.2em; 
@@ -31,13 +33,28 @@ nav a {
 }
 nav a:hover { color: var(--link-hover-color); }
 
-.hero { text-align: center; max-width: 800px; }
-h1 { font-size: 4em; letter-spacing: 0.3em; font-weight: 200; margin-bottom: 10px; }
-p { font-size: 1.2em; color: var(--accent-color); }
+.container { max-width: 800px; width: 100%; }
 
-a { color: var(--link-color); text-decoration: none; border-bottom: 1px solid #333; transition: border-bottom 0.3s ease; }
+.hero { text-align: center; margin-bottom: 60px; }
+h1 { font-size: 3.5em; letter-spacing: 0.3em; font-weight: 200; margin-bottom: 10px; color: #fff; }
+.subtitle { font-size: 1.2em; color: var(--accent-color); font-style: italic; margin-bottom: 20px;}
+
+a { color: var(--link-color); text-decoration: none; border-bottom: 1px solid #333; transition: all 0.3s ease; }
 a:hover { color: var(--link-hover-color); border-bottom: 1px solid var(--link-hover-color); }
 
-section { max-width: 600px; margin-top: 60px; }
-h2 { font-size: 1.5em; letter-spacing: 0.1em; border-left: 2px solid #333; padding-left: 15px; margin-bottom: 30px;}
-li { margin-bottom: 15px; color: var(--text-color); }
+section { margin-top: 50px; }
+h2 { font-size: 1.8em; letter-spacing: 0.1em; border-left: 2px solid var(--highlight); padding-left: 15px; margin-bottom: 20px; color: #eaeaea; font-weight: 300;}
+h3 { font-size: 1.3em; color: #ddd; margin-bottom: 5px; font-weight: 400; }
+.meta { font-family: var(--sans); font-size: 0.85em; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 15px; }
+
+p { margin-bottom: 20px; text-align: justify; }
+ul { padding-left: 20px; margin-bottom: 20px; }
+li { margin-bottom: 10px; color: var(--text-color); }
+
+.card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
