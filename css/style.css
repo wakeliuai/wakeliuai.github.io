@@ -1,68 +1,95 @@
 /* Base Styles */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    /* Using a more modern, professional font stack */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #0f172a; /* Richer dark slate background */
+    color: #cbd5e1; /* Softer, more readable text color */
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 700px; /* Slightly narrower for better reading comfort */
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px 20px;
 }
 
 nav {
     padding: 20px 0;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #1e293b;
     display: flex;
     justify-content: flex-start;
-    gap: 15px;
+    gap: 20px;
 }
 
 nav a {
     text-decoration: none;
-    color: #bbb;
-    font-size: 0.9rem;
+    color: #38bdf8; /* Bright Sky Blue for links */
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
 }
 
 .card {
-    border: 1px solid #333;
-    padding: 20px;
+    border: 1px solid #1e293b;
+    padding: 24px;
     margin-bottom: 20px;
-    border-radius: 8px;
-    background-color: #1e1e1e;
+    border-radius: 12px;
+    background-color: #1e293b;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card h3 a {
+    color: #f1f5f9;
+    text-decoration: none;
+}
+
+.card h3 a:hover {
+    color: #38bdf8;
+}
+
+.meta {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin-top: -10px;
+    margin-bottom: 15px;
 }
 
 .hero {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 h1, h2 {
-    color: #fff;
-    margin-top: 0;
+    color: #f8fafc;
+    letter-spacing: -0.02em;
 }
 
 /* Mobile Responsive */
 @media (max-width: 600px) {
     .container {
-        padding: 10px;
+        padding: 20px 15px;
     }
 
     .hero h1 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     nav {
         justify-content: center;
-        gap: 10px;
+        gap: 15px;
     }
 
     .card {
-        padding: 12px;
-        margin-bottom: 15px;
+        padding: 18px;
     }
 }
