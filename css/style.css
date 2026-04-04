@@ -1,16 +1,15 @@
 /* Base Styles */
 body {
-    /* Using a more modern, professional font stack */
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    background-color: #0f172a; /* Richer dark slate background */
-    color: #cbd5e1; /* Softer, more readable text color */
+    background-color: #0f172a;
+    color: #cbd5e1;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 700px; /* Slightly narrower for better reading comfort */
+    max-width: 700px;
     margin: 0 auto;
     padding: 30px 20px;
 }
@@ -25,7 +24,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #38bdf8; /* Bright Sky Blue for links */
+    color: #38bdf8;
     font-size: 0.95rem;
     font-weight: 500;
     transition: color 0.2s ease;
@@ -44,17 +43,14 @@ nav a:hover {
     transition: transform 0.2s ease;
 }
 
-.card:hover {
-    transform: translateY(-2px);
-}
-
+/* Updated Link Color for Better Contrast in Dark Mode */
 .card h3 a {
-    color: #f1f5f9;
+    color: #60a5fa !important; /* Lighter, more vibrant blue for links */
     text-decoration: none;
 }
 
 .card h3 a:hover {
-    color: #38bdf8;
+    color: #ffffff !important;
 }
 
 .meta {
