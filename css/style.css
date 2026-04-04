@@ -32,10 +32,10 @@ nav a {
     border-radius: 8px;
 }
 
-/* Mobile Responsive */
+/* Mobile Responsive - Adjusted margins and padding for better fit */
 @media (max-width: 600px) {
     .container {
-        padding: 15px;
+        padding: 10px; /* Reduced padding from 15px */
     }
 
     h1 {
@@ -44,10 +44,11 @@ nav a {
 
     nav {
         flex-direction: column;
-        gap: 10px;
+        gap: 5px; /* Reduced gap */
     }
 
     .card {
-        padding: 15px;
+        padding: 10px; /* Reduced padding */
+        margin-bottom: 15px;
     }
 }
