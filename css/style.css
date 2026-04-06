@@ -43,9 +43,8 @@ nav a:hover {
     transition: transform 0.2s ease;
 }
 
-/* Updated Link Color for Better Contrast in Dark Mode */
 .card h3 a {
-    color: #60a5fa !important; /* Lighter, more vibrant blue for links */
+    color: #60a5fa !important;
     text-decoration: none;
 }
 
@@ -65,6 +64,16 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
+/* Rounded Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #38bdf8; /* Nice blue border */
+}
+
 h1, h2 {
     color: #f8fafc;
     letter-spacing: -0.02em;
@@ -78,6 +87,11 @@ h1, h2 {
 
     .hero h1 {
         font-size: 1.8rem;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
     }
 
     nav {
