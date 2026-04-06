@@ -14,13 +14,13 @@ body::before {
     content: '';
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-image: url('/img/galaxy_bg.jpg');
+    background-image: url('../img/galaxy_bg_v2.jpg');
     background-size: cover;
     background-position: center;
     z-index: -1;
     pointer-events: none;
-    filter: brightness(0.25) saturate(0.4);
-    opacity: 0.8;
+    filter: brightness(0.4) saturate(0.8);
+    opacity: 0.9;
 }
 
 
