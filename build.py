@@ -45,7 +45,7 @@ def build_posts(env):
     
     for post in posts:
         output_html = post_template.render(
-            title=post["title"],
+            title=f'{post["title"]} | Wake Liu',
             content=post["content"],
             base_path="../"
         )
@@ -57,7 +57,7 @@ def build_posts(env):
 def build_pages(env, posts):
     blog_template = env.get_template("blog_index.html")
     with open(os.path.join(BASE_DIR, "pages", "blog.html"), "w", encoding="utf-8") as f:
-        f.write(blog_template.render(title="Thoughts", posts=posts, base_path="../"))
+        f.write(blog_template.render(title="Thoughts | Wake Liu", posts=posts, base_path="../"))
         
     index_template = env.get_template("index.html")
     with open(os.path.join(BASE_DIR, "index.html"), "w", encoding="utf-8") as f:
