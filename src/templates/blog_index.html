@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Thoughts & Articles</h1>
+<section>
+    {% for post in posts %}
+    <div class="card">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p class="meta">{{ post.date }}</p>
+        <p>{{ post.preview }}</p>
+    </div>
+    {% endfor %}
+</section>
+{% endblock %}

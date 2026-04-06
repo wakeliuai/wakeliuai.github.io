@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- Make sure CSS path is correct whether we are at root or inside pages/ -->
+    <link rel="stylesheet" href="{{ base_path }}css/style.css">
+    <title>{{ title }} | Wake Liu</title>
+</head>
+<body>
+    <nav>
+        <a href="{{ base_path }}index.html">Home</a>
+        <a href="{{ base_path }}pages/about.html">About</a>
+        <a href="{{ base_path }}pages/experience.html">Experience</a>
+        <a href="{{ base_path }}pages/blog.html">Thoughts</a>
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
