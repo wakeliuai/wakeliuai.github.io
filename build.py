@@ -47,7 +47,7 @@ def build_posts(env):
         output_html = post_template.render(
             title=f'{post["title"]} | Wake Liu',
             content=post["content"],
-            base_path="../"
+            base_path="/"
         )
         with open(os.path.join(BASE_DIR, "pages", post["slug"]), "w", encoding="utf-8") as f:
             f.write(output_html)
@@ -57,11 +57,11 @@ def build_posts(env):
 def build_pages(env, posts):
     blog_template = env.get_template("blog_index.html")
     with open(os.path.join(BASE_DIR, "pages", "blog.html"), "w", encoding="utf-8") as f:
-        f.write(blog_template.render(title="Thoughts | Wake Liu", posts=posts, base_path="../"))
+        f.write(blog_template.render(title="Thoughts | Wake Liu", posts=posts, base_path="/"))
         
     index_template = env.get_template("index.html")
     with open(os.path.join(BASE_DIR, "index.html"), "w", encoding="utf-8") as f:
-        f.write(index_template.render(title="Wake Liu | Silence & Systems", recent_posts=posts[:3], base_path=""))
+        f.write(index_template.render(title="Wake Liu | Silence & Systems", recent_posts=posts[:3], base_path="/"))
 
 if __name__ == "__main__":
     print("Building site to root...")
